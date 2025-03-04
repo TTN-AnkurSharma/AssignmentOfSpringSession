@@ -1,0 +1,19 @@
+package com.ttnAssignment.Assignment2SpringBoot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class Assignment2SpringBootApplication {
+
+	public static void main(String[] args) {
+	ApplicationContext applicationContext= SpringApplication.run(Assignment2SpringBootApplication.class, args);
+
+	ImplementationOfQues_2 implementation=applicationContext.getBean(ImplementationOfQues_2.class);
+	implementation.showProperties();
+
+
+	}
+
+}
